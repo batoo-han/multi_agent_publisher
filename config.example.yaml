@@ -1,0 +1,26 @@
+   openai:
+     api_key: "<ваш OpenAI API ключ>"
+
+   google_sheets:
+     credentials_json: "path/to/credentials.json"
+     sheet_id: "<Google Sheet ID>"
+     worksheet_name: "work"
+
+   serpapi:
+     api_key: "<ваш SerpAPI ключ>"
+
+   telegram:
+     token: "<бот-токен>"
+     channel_chat_id: "-1001234567890"
+     channel_username: "my_channel"
+     owner_chat_id: "123456789"
+
+   memory:
+     persist_directory: "./chroma_db"
+     collection_name: "publications"
+
+   scheduling:
+     timezone: "Europe/Moscow"
+     jobs:
+       - cron: "0 9 * * *"               # ежедневно в 09:00
+       - cron: "30 18 * * mon,wed,fri"   # пн/ср/пт в 18:30
